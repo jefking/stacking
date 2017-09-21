@@ -1,0 +1,27 @@
+{
+  "name": "stacking",
+  "version": "1.0.0",
+  "description": "Stick to your own stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefking/stacking.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "web",
+    "html",
+    "css",
+    "json"
+  ],
+  "author": "Jef King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefking/stacking/issues"
+  },
+  "homepage": "https://github.com/jefking/stacking#readme"
+}
