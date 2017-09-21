@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Stick to your own stack",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=6.11"
   },
   "scripts": {
     "start": "node index.js"
