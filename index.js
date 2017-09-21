@@ -6,6 +6,7 @@ var config = require('./config');
 
 var app = express();
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 // HOME PAGE
 app.get('/', function (req, res) {
