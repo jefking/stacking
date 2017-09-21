@@ -9,5 +9,9 @@
     "start": "node index.js"
   },
   "author": "Jef King",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "ejs": "^2.5.7"
+  }
 }
