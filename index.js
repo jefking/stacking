@@ -8,18 +8,13 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-// HOME PAGE
+// ROOT
 app.get('/', function (req, res) {
     res.render('index');
 });
 
-// Create STACK
-app.get('/create', function (req, res) {
-    res.render('create');
-});
-
-// View STACK
-app.get('/view', function (req, res) {
+// STACK
+app.get('/:stack', function (req, res) {
     res.render('view');
 });
 
