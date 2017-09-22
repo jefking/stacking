@@ -1,14 +1,18 @@
 {
   "name": "stacking",
-  "description": "Simple Hello World Node.js sample for Azure App Service",
+  "description": "Stick to your own stack",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "author": "Jef King",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=6.11.3"
   },
   "scripts": {
     "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "ejs": "^2.5.7"
   }
 }
