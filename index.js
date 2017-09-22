@@ -1,8 +1,13 @@
 'use strict';
 
 const express = require('express');
-const config = require('config');
 
+const config;
+config.Port = process.env.PORT || 3000;
+
+//const app = express();
+//app.set('view engine', 'ejs');
+//app.use(express.static('public'));
 
 var http = require('http');
 
