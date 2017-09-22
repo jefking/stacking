@@ -1,1 +1,1 @@
-exports.Port = process.env.PORT || 1337;
+exports.Port = process.env.PORT || 3000;
