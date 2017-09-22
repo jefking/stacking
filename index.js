@@ -1,10 +1,10 @@
 'use strict';
 
-var express = require('express');
+const express = require('express');
 
-var config = require('./config');
+const config = require('./config');
 
-var app = express();
+const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
