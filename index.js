@@ -8,13 +8,14 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-var http = require('http');
-
-var server = http.createServer(function(request, response) {
-
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello Azure: 4!");
-
+// HOME PAGE
+app.get('/', function (req, res) {
+    res.render('index');
 });
 
-server.listen(config.Port);
+// VIEW STACK
+// app.get('/view/*', function (req, res) {
+//     res.render('stack');
+// });
+
+app.listen(config.Port);
