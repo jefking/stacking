@@ -1,12 +1,12 @@
 <%- include('../views/partials/header.ejs') %>
 
-<b>Create Stack</b>
+<b>Stack em'</b>
 <form>
     <div class="form-group">
         <div class="form-group row">
             <label for="example-text-input" class="col-2 col-form-label">Name</label>
             <div class="col-10">
-                <input class="form-control" type="text" value="XXX-KING-XXX" id="key">
+                <input class="form-control" type="text" id="key" />
             </div>
             <button type="submit" class="btn btn-primary">+</button>
         </div>
@@ -19,5 +19,15 @@
         </div>
     </div>
 </form>
+<script>
+    function stackName() {
+        return window.location.pathname || 'KING';
+    }
+
+    window.addEventListener("load", function(){
+            let key = document.getElementById("key");
+            key.value = stackName();
+    });
+</script>
 
 <%- include('../views/partials/footer.ejs') %>
