@@ -1,21 +1,13 @@
-'use strict';
+var http = require('http');
 
-const express = require('express');
+var server = http.createServer(function(request, response) {
 
-const config = require('./config');
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Hello World!");
 
-const app = express();
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
-
-// HOME PAGE
-app.get('/', function (req, res) {
-    res.render('index');
 });
 
-// VIEW STACK
-// app.get('/view/*', function (req, res) {
-//     res.render('stack');
-// });
+var port = process.env.PORT || 1337;
+server.listen(port);
 
-app.listen(config.Port);
+console.log("Server running at http://localhost:%d", port);
