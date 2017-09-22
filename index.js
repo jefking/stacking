@@ -1,7 +1,8 @@
 'use strict';
 
 const express = require('express');
-const config = require('./config');
+const config = require('config');
+
 
 var http = require('http');
 
