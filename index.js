@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-let config;
+let config = {};
 config.Port = process.env.PORT || 3000;
 
 const app = express();
@@ -19,5 +19,3 @@ var server = http.createServer(function(request, response) {
 });
 
 server.listen(config.Port);
-
-console.log("Server running at http://localhost:%d", port);
