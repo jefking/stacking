@@ -13,9 +13,14 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-// VIEW STACK
-// app.get('/view/*', function (req, res) {
-//     res.render('stack');
-// });
+// Create STACK
+app.get('/create', function (req, res) {
+    res.render('create');
+});
+
+// View STACK
+app.get('/view', function (req, res) {
+    res.render('view');
+});
 
 app.listen(config.Port);
