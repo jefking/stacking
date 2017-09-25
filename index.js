@@ -13,9 +13,4 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-// STACK
-app.get('/:stack', function (req, res) {
-    res.render('view');
-});
-
 app.listen(config.Port);
